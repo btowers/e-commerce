@@ -8,7 +8,7 @@ An ecommerce REST API
 
 ### **Requirements**
 
-- Node.js v10.0+
+- Node.js v16.0+
 - MongoDB Community Server or MongoDB Atlas account (https://www.mongodb.com/)
 
 ### **Description**
@@ -16,10 +16,6 @@ An ecommerce REST API
 ✔️ TypeScript
 
 ✔️ MongoDB
-
-✔️ Clean Code
-
-✔️ Tests (jest)
 
 ✔️ Email notifications (nodemailer + sendgrid)
 
