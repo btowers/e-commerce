@@ -6,7 +6,7 @@
   "author": "Brian Towers",
   "private": true,
   "scripts": {
-    "build":"quasar build",
+    "build":"./node_modules/.bin/quasar build",
     "lint": "eslint --ext .js,.vue ./",
     "test": "echo \"No test specified\" && exit 0"
   },
