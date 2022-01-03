@@ -17,10 +17,6 @@ An ecommerce REST API
 
 ✔️ MongoDB
 
-✔️ Clean Code
-
-✔️ Tests (jest)
-
 ✔️ Email notifications (nodemailer + sendgrid)
 
 ✔️ Whatsapp notifications (twilio)
