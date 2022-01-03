@@ -1,0 +1,23 @@
+version: "3"
+services:
+  ecommerce:
+      container_name: ecommerce
+      image: "ecommerce:latest"
+      build: .
+      ports:
+        - "3000:8080"
+      environment:
+        - MYSQL_CLUSTER=database-1.cvru6jtr3hao.us-east-1.rds.amazonaws.com
+        - MYSQL_USER=admin
+        - MYSQL_PASSWORD=coderhouse
+        - MYSQL_DBNAME=ecommerce
+        - MONGO_ATLAS_URI=mongodb+srv://coder:coderhouse@cluster0.ngsei.mongodb.net/ecommerce?retryWrites=true&w=majority
+        - PORT=8080
+        - SQLITE_CLIENT=sqlite3
+        - SQLITE_FILENAME=./mydb.sqlite
+        - SENDGRID_API_KEY='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'
+        - TWILIO_ACCOUNT_ID='AC7e0413686a3ddb47a2a1138134c9221f'
+        - TWILIO_TOKEN='5d55e90f96f267e5258c3e73ba914fac'
+        - TWILIO_CELLPHONE='+18604216667'
+        - ADMIN_EMAIL='brianfiuba@gmail.com'
+      
