@@ -40,7 +40,6 @@ app.use(passport.initialize());
 // 6 - Routing
 app.use('/api', apiRouter);
 app.use(history());
-console.log(path.resolve(__dirname, '../../public'))
 app.use(express.static(path.resolve(__dirname, '../../public')));
 
 // 7 - Create Server
