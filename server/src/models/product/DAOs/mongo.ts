@@ -35,6 +35,7 @@ export class Product implements ProductBaseClass {
     if (option == Presistence.MongoDBLocal) {
       this.srv = `mongodb://localhost:27017/${config.MONGO_DB_NAME}`;
     } else {
+      console.log(config.MONGO_ATLAS_URI);
       this.srv = config.MONGO_ATLAS_URI;
     }
     mongoose.connect(this.srv);

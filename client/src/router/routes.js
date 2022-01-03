@@ -26,12 +26,12 @@ const routes = [
   },
   {
     path: "/login",
-    component: () => import("layouts/Login.vue"),
+    component: () => import("layouts/CleanLayout.vue"),
     children: [{ path: "", component: () => import("pages/Login.vue") }],
   },
   {
     path: "/register",
-    component: () => import("layouts/Login.vue"),
+    component: () => import("layouts/CleanLayout.vue"),
     children: [{ path: "", component: () => import("pages/Register.vue") }],
   },
 
