@@ -1,5 +1,5 @@
 /**
- * @swagger
+ * @openapi
  * /api/orders/{id}:
  *   get:
  *     summary: Get orders

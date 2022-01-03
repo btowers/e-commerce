@@ -1,5 +1,5 @@
 /**
- * @swagger
+ * @openapi
  * /api/image:
  *   post:
  *     summary: Upload an Image
