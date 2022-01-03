@@ -7,6 +7,7 @@ import compression from 'compression';
 import history from 'connect-history-api-fallback';
 import apiRouter from '../routes';
 import passport from './authenticator';
+import path from 'path';
 
 const app = express();
 
@@ -39,7 +40,8 @@ app.use(passport.initialize());
 // 6 - Routing
 app.use('/api', apiRouter);
 app.use(history());
-app.use(express.static('public'));
+console.log(path.resolve(__dirname, '../../public'))
+app.use(express.static(path.resolve(__dirname, '../../public')));
 
 // 7 - Create Server
 const server = http.createServer(app);
