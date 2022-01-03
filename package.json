@@ -4,7 +4,7 @@
   "description": "<img src=\"https://ugeek.github.io/blog/images-blog/node.png\" width=\"150px\" align=\"right\" />",
   "main": "index.js",
   "scripts": {
-    "build": "./backend/node_modules/.bin/tsc -p ./backend/tsconfig.json",
+    "build": "tsc -p ./backend/tsconfig.json",
     "start": "node ./backend/dist/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
