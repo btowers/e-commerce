@@ -4,7 +4,7 @@
   "description": "<img src=\"https://ugeek.github.io/blog/images-blog/node.png\" width=\"150px\" align=\"right\" />",
   "main": "index.js",
   "scripts": {
-    "start": "node ./backend/dist/index.js",
+    "start": "node -r module-alias/register ./backend/dist",
     "build": "cd ./backend && npm run build && cd ../frontend && npm run build",
     "heroku-prebuild": "npm install --prefix backend && npm install --prefix frontend",
     "heroku-postbuild": "cd ./backend && npm run build && cd ../frontend && npm run build",
