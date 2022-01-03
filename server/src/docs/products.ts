@@ -1,5 +1,5 @@
 /**
- * @swagger
+ * @openapi
  * /api/products:
  *   get:
  *    summary: Returns all the products

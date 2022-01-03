@@ -1,5 +1,5 @@
 /**
- * @swagger
+ * @openapi
  * /api/user/login:
  *   post:
  *     summary: Log in user and return JWT

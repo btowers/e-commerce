@@ -1,5 +1,5 @@
 /**
- * @swagger
+ * @openapi
  * /api/cart:
  *   get:
  *     summary: Get the Cart of the user

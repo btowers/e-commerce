@@ -4,7 +4,7 @@
 
 ### **Description**
 
-An ecommerce REST API 
+An ecommerce APP
 
 ### **Requirements**
 
@@ -19,8 +19,6 @@ An ecommerce REST API
 
 ✔️ Email notifications (nodemailer + sendgrid)
 
-✔️ Whatsapp notifications (twilio)
-
 ✔️ Logging (winston)
 
 ✔️ Authentication (JWT)
@@ -32,20 +30,22 @@ An ecommerce REST API
 ✔️ Docs (swagger)
 
 
-
-
 ### **Install**
+
+- Install Server dependencies:
 
 ```console
 $ cd server && npm install
 ```
 
+- Install Client dependencies:
+
 ```console
 $ cd client && npm install
 ```
 
-### **Build**
+### **Build and Run Project**
 
 ```console
-$ npm run build
+$ npm run build:start
 ```
