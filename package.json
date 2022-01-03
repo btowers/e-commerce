@@ -4,7 +4,7 @@
   "description": "<img src=\"https://ugeek.github.io/blog/images-blog/node.png\" width=\"150px\" align=\"right\" />",
   "main": "index.js",
   "scripts": {
-    "start": "node ./backend/index.js",
+    "start": "node ./backend/dist/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
