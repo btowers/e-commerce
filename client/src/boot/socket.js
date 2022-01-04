@@ -1,7 +1,6 @@
 import { boot } from 'quasar/wrappers';
 import { io } from 'socket.io-client';
 
-console.log('ENV: ', process.env.ENV);
 const URL =
   process.env.ENV == 'localhost'
     ? 'localhost:8080'
