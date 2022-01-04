@@ -3,7 +3,6 @@ export function newMessage(state, message) {
 }
 
 export function emptyChat(state) {
-  console.log("emptyChat");
   state.messages = [];
 }
 

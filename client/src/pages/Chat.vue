@@ -35,7 +35,6 @@ export default {
     };
   },
   created() {
-    console.log("messageRequest");
     this.$socket.emit("messageRequest", {
       token: localStorage.getItem("token"),
     });

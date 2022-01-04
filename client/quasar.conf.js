@@ -1,3 +1,6 @@
+const dotenv=require('dotenv');
+dotenv.config();
+console.log(process.env)
 /*
  * This file runs in a Node context (it's NOT transpiled by Babel), so use only
  * the ES6 features that are supported by your Node version. https://node.green/
@@ -45,7 +48,7 @@ module.exports = configure(function (ctx) {
       vueRouterMode: 'history', // available values: 'hash', 'history'
       distDir: '../server/public',
       env: {
-        ENV: 'production',
+        ENV: process.env.ENV,
       },
       // transpile: false,
       // publicPath: '/',
