@@ -7,7 +7,7 @@
     "start": "cd ./server && node ./dist",
     "build": "cd ./server && npm run build && cd ../client && npm run build",
     "build:start": "npm run build && npm run start",
-    "heroku-prebuild": "npm install --prefix server && npm install --prefix client",
+    "heroku-prebuild": "cd ./server && npm install && npm install --prefix client",
     "heroku-postbuild": "cd ./server && npm run build && cd ../client && npm run build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
