@@ -6,7 +6,7 @@
   "author": "Brian Towers",
   "private": true,
   "scripts": {
-    "build":"./node_modules/.bin/quasar build",
+    "build": "./node_modules/.bin/quasar build",
     "lint": "eslint --ext .js,.vue ./",
     "test": "echo \"No test specified\" && exit 0"
   },
@@ -21,6 +21,7 @@
   "devDependencies": {
     "@babel/eslint-parser": "^7.13.14",
     "@quasar/app": "^3.0.0",
+    "dotenv": "^10.0.0",
     "eslint": "^7.14.0",
     "eslint-config-prettier": "^8.1.0",
     "eslint-plugin-vue": "^7.0.0",

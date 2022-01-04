@@ -17,11 +17,6 @@ const venv = {
   MONGO_ATLAS_URI: process.env.MONGO_ATLAS_URI || 'clusterUrl',
   MONGO_LOCAL_URI:
     process.env.MONGO_LOCAL_URI || 'mongodb://localhost:27017/ecommerce',
-  MYSQL_CLUSTER: process.env.MYSQL_CLUSTER || 'user',
-  MYSQL_USER: process.env.MYSQL_USER || 'mySQLUser',
-  MYSQL_PASSWORD: process.env.MYSQL_PASSWORD || 'mySQLPassword',
-  MYSQL_DBNAME: process.env.MYSQL_DBNAME || 'ecommerce',
-  SQLITE_CLIENT: process.env.SQLITE_CLIENT,
 
   mailer: {
     adminMail: process.env.ADMIN_EMAIL || 'brianfiuba@gmail.com',

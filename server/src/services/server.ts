@@ -12,8 +12,6 @@ import path from 'path';
 import swaggerUi from 'swagger-ui-express';
 import swaggerJSDoc from 'swagger-jsdoc';
 
-
-
 const app = express();
 
 // 1 - Security
@@ -39,12 +37,16 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(cookieParser());
 
-// 5 - Authentication
+// 5 - Authentication (Passport JWT)
 app.use(passport.initialize());
 
 // 6 - Routing
 app.use('/api', apiRouter);
-app.use('/docs', swaggerUi.serve, swaggerUi.setup(swaggerJSDoc(config.swaggerOptions)));
+app.use(
+  '/docs',
+  swaggerUi.serve,
+  swaggerUi.setup(swaggerJSDoc(config.swaggerOptions))
+);
 app.use(history());
 app.use(express.static(path.resolve(__dirname, '../../public')));
 
