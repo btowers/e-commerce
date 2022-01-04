@@ -1,10 +1,12 @@
 import { boot } from 'quasar/wrappers';
 import { io } from 'socket.io-client';
 
-const URL =
-  process.env.ENV == 'localhost'
-    ? 'localhost:8080'
-    : 'https://brian-coder.herokuapp.com/';
+console.log(process.env.ENV);
+
+const URL = 'https://brian-coder.herokuapp.com/';
+// process.env.ENV == 'localhost'
+//   ? 'localhost:8080'
+//   : 'https://brian-coder.herokuapp.com/';
 
 const socket = io(URL, { autoConnect: true });
 
