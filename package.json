@@ -4,7 +4,7 @@
   "description": "<img src=\"https://ugeek.github.io/blog/images-blog/node.png\" width=\"150px\" align=\"right\" />",
   "main": "index.js",
   "scripts": {
-    "start": "cd ./server && node ./dist",
+    "start": "node ./server/dist",
     "build": "cd ./server && npm run build && cd ../client && npm run build",
     "build:start": "npm run build && npm run start",
     "heroku-prebuild": "npm install --prefix server && npm install --prefix client",
