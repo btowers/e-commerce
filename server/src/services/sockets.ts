@@ -11,7 +11,11 @@ import { formatMessage, formatMessages } from '../utils/formatter';
 import { messageS } from '../models/message/message.service';
 
 export const initWsServer = (server: http.Server) => {
-  const io = new Server(server);
+  const io = new Server(server, {
+    cors: {
+      origin: '*',
+    },
+  });
   io.on('connection', (socket: Socket) => {
     socket.on(
       'new-message',
