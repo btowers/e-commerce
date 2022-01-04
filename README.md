@@ -1,10 +1,10 @@
 <img src="https://ugeek.github.io/blog/images-blog/node.png" width="150px" align="right" />
 
-# eCommerce APP
+# eCommerce APP 
 
 ### **Description**
 
-An ecommerce APP
+eCommerce APP developed in a MEVN stack
 
 ### **Requirements**
 
@@ -48,4 +48,16 @@ $ cd client && npm install
 
 ```console
 $ npm run build:start
+```
+
+### Docker
+
+Create the Docker image:
+```console
+$ docker build .
+```
+
+Create container from that image and run it on port 8080, create an .env file with the environment variables as shown in the env.example file and run:
+```console
+$ docker run -p 8080:8080 --env-file ./.env ecommerce
 ```
