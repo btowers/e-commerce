@@ -17,6 +17,7 @@ export const initWsServer = (server: http.Server) => {
     },
   });
   io.on('connection', (socket: Socket) => {
+    console.log('connected')
     socket.on(
       'new-message',
       async (message: { name: string; text: string; token: string }) => {
