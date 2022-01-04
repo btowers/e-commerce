@@ -44,7 +44,6 @@ module.exports = configure(function (ctx) {
     build: {
       vueRouterMode: 'history', // available values: 'hash', 'history'
       distDir: '../server/public',
-      env: { ENV: 'heroku' },
 
       // transpile: false,
       // publicPath: '/',
