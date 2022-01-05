@@ -13,7 +13,9 @@ eCommerce APP developed in a MEVN stack
 
 ### **Features**
 
-✔️ TypeScript
+- Backend:
+
+✔️ Node.js with TypeScript
 
 ✔️ MongoDB
 
@@ -28,6 +30,14 @@ eCommerce APP developed in a MEVN stack
 ✔️ Validation (joi)
 
 ✔️ Docs (swagger)
+
+- Frontend
+
+✔️ Vue.js 2
+
+✔️ Vuex store
+
+✔️ Quasar
 
 
 ### **Install**
