@@ -64,7 +64,7 @@ $ npm run build:start
 
 Create the Docker image:
 ```console
-$ docker build .
+$ docker build -t ecommerce:0.0.1 .
 ```
 
 Create container from that image and run it on port 8080, create an .env file with the environment variables as shown in the env.example file and run:
