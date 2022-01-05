@@ -44,9 +44,7 @@ module.exports = configure(function (ctx) {
     build: {
       vueRouterMode: 'history', // available values: 'hash', 'history'
       distDir: '../server/public',
-      env: {
-        ENV:require('dotenv').config({ path: '../.env' }).parsed.ENV || process.env.ENV,
-      },
+ 
       // transpile: false,
       // publicPath: '/',
 

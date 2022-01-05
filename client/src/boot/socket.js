@@ -1,9 +1,11 @@
 import { boot } from 'quasar/wrappers';
 import { io } from 'socket.io-client';
+// import dotenv from 'dotenv';
+// dotenv.config({ path: '../.env' });
 
-const URL = process.env.ENV=='localhost' ? 'localhost:8080' : 'https://brian-coder.herokuapp.com';
+//const URL ='localhost:' + (process.env.PORT||'8080');
 
-const socket = io(URL, { autoConnect: true });
+const socket = io('/', { autoConnect: true });
 
 export default boot(({ app, store }) => {
   socket.on('resp-message', function (data) {
