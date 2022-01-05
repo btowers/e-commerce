@@ -1,9 +1,5 @@
 import { boot } from 'quasar/wrappers';
 import { io } from 'socket.io-client';
-// import dotenv from 'dotenv';
-// dotenv.config({ path: '../.env' });
-
-//const URL ='localhost:' + (process.env.PORT||'8080');
 
 const socket = io('/', { autoConnect: true });
 

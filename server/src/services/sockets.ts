@@ -11,13 +11,8 @@ import { formatMessage, formatMessages } from '../utils/formatter';
 import { messageS } from '../models/message/message.service';
 
 export const initWsServer = (server: http.Server) => {
-  const io = new Server(server, {
-    cors: {
-      origin: '*',
-    },
-  });
+  const io = new Server(server);
   io.on('connection', (socket: Socket) => {
-    console.log('connected')
     socket.on(
       'new-message',
       async (message: { name: string; text: string; token: string }) => {
