@@ -55,7 +55,7 @@ const venv = {
         },
       ],
     },
-    apis: ['src/docs/*'],
+    apis: ['server/src/docs/*'],
   },
 };
 
