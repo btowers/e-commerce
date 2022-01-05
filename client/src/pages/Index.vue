@@ -1,17 +1,6 @@
 <template>
   <q-page class="flex justify-center">
     <div class="q-pa-md" style="width: 1400px">
-      <div class="row">
-        <div class="col-3">
-          <q-input
-            outlined
-            v-model="nombre"
-            label="Nombre"
-            @keyup.enter="getProducts"
-            dense
-          />
-        </div>
-      </div>
       <q-table
         grid
         title="Productos"
