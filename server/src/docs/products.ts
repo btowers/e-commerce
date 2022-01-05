@@ -17,11 +17,8 @@
  *    summary: Create a new product
  *    tags:
  *      - Products
- *    components:
- *      securitySchemes:
- *       BearerAuth:
- *        type: http
- *        scheme: bearer
+ *    security:
+ *      - bearerAuth: []
  *    responses:
  *      201:
  *       description: Returns the created product
@@ -30,6 +27,27 @@
  *       in: body
  *       description: Product to create
  *       required: true
+ *       schema:
+ *         type: object
+ *         properties:
+ *          name:
+ *              type: string
+ *              example: Medias de Huracán
+ *          descripcion:
+ *              type: string
+ *              example: Medias blancas titulares de Huracán
+ *          categoria:
+ *              type: string
+ *              example: Medias
+ *          precio:
+ *              type: number
+ *              example: 1000
+ *          stock:
+ *              type: number
+ *              example: 500
+ *
+ *
+ *
  * /api/products/{category}:
  *   get:
  *     summary: Get products by Category
@@ -51,6 +69,8 @@
  *    summary: Update a product
  *    tags:
  *      - Products
+ *    security:
+ *      - bearerAuth: []
  *    responses:
  *      201:
  *       description: Returns the updated product
@@ -69,6 +89,8 @@
  *    summary: Delete a product
  *    tags:
  *      - Products
+ *    security:
+ *      - bearerAuth: []
  *    responses:
  *      201:
  *       description: Returns the created product

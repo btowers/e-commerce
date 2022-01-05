@@ -2,43 +2,78 @@
  * @openapi
  * /api/user/login:
  *   post:
- *     summary: Log in user and return JWT
  *     tags:
  *      - User
+ *     summary: Log in user and return JWT
  *     requestBody:
- *      required: true
- *      content:
- *       application/json:
- *       schema:
- *          $ref: "#/definitions/productAddRemove"
+ *       required: true
+ *       content:
+ *         application/json:
+ *          schema:
+ *           type: object
+ *           properties:
+ *            email:
+ *              type: string
+ *              example: test@gmail.com
+ *            password:
+ *              type: string
+ *              example: TestUser1!
  *     responses:
- *       200:
- *         description: Returns the cart of a user
+ *       '200':
+ *         description: User logged in
+ *       '401':
+ *         description: Unauthorized User
  *
  * /api/user/signup:
  *   post:
- *    summary: Sign up user
- *    tags:
+ *     tags:
  *      - User
- *    responses:
- *      201:
- *       description: Returns the updated cart
- *    parameters:
- *     - name: product
- *       in: body
- *       description: Object with id of the product ID and quantity to add
+ *     summary: Sign up user
+ *     requestBody:
  *       required: true
- *       schema:
- *          $ref: "#/definitions/productAddRemove"
- *
- * definitions:
- *  productAddRemove:
- *   type: "object"
- *   properties:
- *     product:
- *       type: "string"
- *     quantity:
- *      type: "number"
- *   required: ["product", "quantity"]
- *
+ *       content:
+ *         application/json:
+ *          schema:
+ *           type: object
+ *           properties:
+ *            nombre:
+ *              type: string
+ *              example: Test User 2
+ *            email:
+ *              type: string
+ *              example: test2@gmail.com
+ *            password:
+ *              type: string
+ *              example: TestUser2!
+ *              description: Password must be at least 8 characters long and contain at least one number, one uppercase letter and one special character
+ *            confirmPassword:
+ *              type: string
+ *              example: TestUser2!
+ *              description: confirmPassword should match password
+ *            direccion:
+ *              type: object
+ *              properties:
+ *               calle:
+ *                  type: string
+ *                  example: Mi Calle
+ *               altura:
+ *                  type: string
+ *                  example: 1000
+ *               cp:
+ *                  type: string
+ *                  example: 1234
+ *               piso:
+ *                  type: string
+ *                  example: 4
+ *               departamento:
+ *                  type: string
+ *                  example: A
+ *            telefono:
+ *                  type: string
+ *                  example: 1122334455
+ *     responses:
+ *       '200':
+ *         description: User Signed Up
+ *       '401':
+ *         description: Unauthorized User
  */

@@ -16,6 +16,8 @@ class AuthMiddleware {
    * @param {NextFunction} next
    */
   async login(req: Request, res: Response, next: NextFunction) {
+    console.log('BODY');
+    console.log(req.body);
     passport.authenticate(
       'login',
       { session: false },
